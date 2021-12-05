@@ -1,0 +1,52 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,900;1,300&display=swap');*/
+
+*{
+    /* Aligns */
+    margin: 0;
+    padding: 0;
+
+    /* Sizes */
+    box-sizing: border-box;
+}
+
+html, body{
+    /* Sizes */
+    height: 100%;
+}
+
+body{
+    /* Colors */
+    background-image: linear-gradient(178deg, rgb(54, 158, 255), rgb(255, 0, 89));
+    color: aliceblue;
+    background-attachment: fixed;
+
+    /* Fonts */
+    font-family: "Source Code Pro", monospace;
+}
+
+::selection{
+    /* Colors */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lime;
+}
+
+p, span{
+    /* Fonts */
+    font-weight: bold;
+}
+
+a:not(.default){
+    /* Colors */
+    text-decoration: none;
+    color: rgb(0, 255, 157);
+}
+
+.untouch{
+    /* Disabled touch for all browsers */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,12 @@
+footer{
+    /* Colors */
+    background-color: rgb(18, 19, 27);
+
+    /* Sizes */
+    width: 100%;
+    padding: 40px 5vw;
+
+    /* Aligns */
+    text-align: center;
+}
+

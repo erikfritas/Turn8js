@@ -1,0 +1,78 @@
+[class*="mobile"]{
+    display: none;
+}
+
+
+@media screen and (max-width: 500px){
+    .desktop-500:not(.active){
+        display: none !important;
+    }
+    .mobile-500{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .desktop-600:not(.active){
+        display: none !important;
+    }
+    .mobile-600{
+        display: block;
+    }
+    .desktop-horizontal-600{
+        flex-direction: row;
+    }
+    .desktop-vertical-600{
+        flex-direction: column;
+    }
+    .desktop-100width-600{
+        width: 100% !important;
+    }
+    .desktop-90width-600{
+        width: 90% !important;
+    }
+
+    /* HEADER */
+    header > #header-content{
+        /* Aligns */
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .desktop-750:not(.active){
+        display: none !important;
+    }
+    .mobile-750{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .desktop-800:not(.active){
+        display: none !important;
+    }
+    .mobile-800{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .desktop-900:not(.active){
+        display: none !important;
+    }
+    .mobile-900{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .desktop-1024:not(.active){
+        display: none !important;
+    }
+    .mobile-1024{
+        display: block;
+    }
+}

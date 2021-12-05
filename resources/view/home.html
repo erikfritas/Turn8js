@@ -1,0 +1,84 @@
+@extends('app')
+
+@section('title', 'HOME')
+
+@section('content')
+
+    <header class="desktop-vertical-600 desktop-90width-600">
+        <img src="{{ T_PATH }}resources/img/home-header-img.jpg" alt="home-header-img">
+        <div id="header-content">
+            <h1>Jogue e crie!</h1>
+            <p>Com nosso sistema de criação de jogos super completo, você usar toda a sua criatividade!</p>
+        </div>
+    </header>
+
+    <section id="games" class="desktop-90width-600">
+        <article class="game-category">
+            <h1 class="category-title">Cartas</h1>
+            <div class="games slider">
+                <div class="content-slider">
+                    @foreach ($games as $game)
+
+                        <article class="game">
+                            <div class="game-img" src="{{ T_PATH }}resources/img/placeholder-game.jpg"></div>
+                            <div class="link-game" href="{{ $game->url }}">
+                                <h1 class="title">{{ $game->title }}</h1>
+                                <h4 class="description">
+                                    {{ $game->description }}
+                                </h4>
+                                <p class="stars">{{ $game->stars }}</p>
+                                <p class="mode">{{ $game->mode }}</p>
+                            </div>
+                        </article>
+
+                    @endforeach
+                </div>
+            </div>
+        </article>
+        <article class="game-category">
+            <h1 class="category-title">Tiro</h1>
+            <div class="games slider">
+                <div class="content-slider">
+                    @foreach ($games as $game)
+
+                        <article class="game">
+                            <div class="game-img" src="{{ T_PATH }}resources/img/placeholder-game.jpg"></div>
+                            <div class="link-game" href="{{ $game->url }}">
+                                <h1 class="title">{{ $game->title }}</h1>
+                                <h4 class="description">
+                                    {{ $game->description }}
+                                </h4>
+                                <p class="stars">{{ $game->stars }}</p>
+                                <p class="mode">{{ $game->mode }}</p>
+                            </div>
+                        </article>
+
+                    @endforeach
+                </div>
+            </div>
+        </article>
+        <article class="game-category">
+            <h1 class="category-title">Corrida</h1>
+            <div class="games slider">
+                <div class="content-slider">
+                    @foreach ($games as $game)
+
+                        <article class="game">
+                            <div class="game-img" src="{{ T_PATH }}resources/img/placeholder-game.jpg"></div>
+                            <div class="link-game" href="{{ $game->url }}">
+                                <h1 class="title">{{ $game->title }}</h1>
+                                <h4 class="description">
+                                    {{ $game->description }}
+                                </h4>
+                                <p class="stars">{{ $game->stars }}</p>
+                                <p class="mode">{{ $game->mode }}</p>
+                            </div>
+                        </article>
+
+                    @endforeach
+                </div>
+            </div>
+        </article>
+    </section>
+
+@endsection

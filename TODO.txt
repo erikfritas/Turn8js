@@ -1,0 +1,7 @@
+DONE: Footer
+
+TODO: Game slider
+TODO: Slider btn
+TODO: Cadastro de games
+TODO: Editor de games
+

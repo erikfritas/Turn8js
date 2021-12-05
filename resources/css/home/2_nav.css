@@ -1,0 +1,103 @@
+nav:not(.default){
+    /* Colors */
+    background-color: rgba(240, 248, 255, 0.07);
+    box-shadow: inset 0 -10px 20px rgba(240, 248, 255, 0.2);
+
+    /* Sizes */
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    padding: 40px 8vw;
+
+    /* Aligns */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navlogo{
+    /* Sizes */
+    font-size: 35px;
+}
+
+#navlogo a, #navlist a{
+    /* Colors */
+    color: rgb(255, 255, 255);
+}
+
+#navlist{
+    list-style-type: none;
+}
+
+#navlist:not(.active){
+    /* Aligns */
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+#navlist.active{
+    /* Colors */
+    background-image: linear-gradient(to left top, rgba(0, 0, 255, 0.6), rgba(255, 0, 0, 0.6));
+
+    /* Aligns */
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+
+    /* Sizes */
+    font-size: 35px;
+    width: 90vw;
+    border-radius: 30px;
+    padding: 20px 30px;
+    padding-top: 40px;
+}
+
+#navlist.active #navback-mobile{
+    cursor: pointer;
+
+    /* Colors */
+    background-color: rgba(255, 0, 0, 0.35);
+    
+    /* Sizes */
+    width: 100%;
+    height: 40px;
+
+    /* Aligns */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 40%;
+}
+
+#navlist a{
+    /* Colors */
+    background-image: linear-gradient(to right, blue, red);
+
+    /* Aligns */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    /* Sizes */
+    background-size: 0px 3px;
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+#navlist a:hover{
+    /* Sizes */
+    background-size: 100% 3px;
+}
+
+/* MOBILE */
+nav > .mobile-600{
+    cursor: pointer;
+
+    /* Sizes */
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,8 @@
+{
+    "name": "turn8js/mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
